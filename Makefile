@@ -5,10 +5,10 @@
 main: main.o func.o 
 	gcc -o main main.o func.o 
 
-main.o: main.c
+main.o: main.c main_header.h func.h
 	gcc -O0 -g3 -Wall -c main.c
 
-func.o: func.c 
+func.o: func.c func.h
 	gcc -O0 -g3 -Wall -c func.c 
 
 clean:
