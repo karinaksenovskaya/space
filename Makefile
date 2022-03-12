@@ -24,7 +24,7 @@ perror.o: perror.c perror_header.h
 	gcc -O0 -g3 -Wall -c perror.c
 
 table_error: table_error.o 
-	gcc -o table_error table_error.c 
+	gcc -o table_error table_error.c
 
 table_error.o: table_error.c perror_header.h
 	gcc -O0 -g3 -Wall -c table_error.c 
