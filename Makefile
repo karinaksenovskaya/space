@@ -33,4 +33,4 @@ clean:
 	@echo "This is clean action"
 	rm -rf main glibc-version perror table_error *.o
 
-all: table_error
+all: main glibc-version perror table_error

@@ -1,10 +1,11 @@
 #include "perror_header.h"
+#define value (5)
 
 int main(int argc, char** argv){
-    int errnum = open("main", O_RDONLY); 
-    printf("%d\n", errnum);
+    int errnum = open("mainn", O_RDONLY); 
+    printf("%d\n", value);
     if (errnum == -1) { 
-        perror("Error"); 
+        perror(argv[0]); 
         exit(EXIT_FAILURE); 
     } 
 }
