@@ -1,0 +1,39 @@
+{
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Build all",
+			"command": "/usr/bin/make",
+			"args": [
+				"all"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Task to build the entire set of binaries"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Clean all",
+			"command": "/usr/bin/make",
+			"args": [
+				"clean"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"detail": "Task to clean the entire set of binaries"
+		}
+	],
+	"version": "2.0.0"
+}

@@ -1,0 +1,13 @@
+{
+	"editor.renderWhitespace": "all",
+	"editor.rulers": [80,120],
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"workbench.colorCustomizations": {
+		"editorRuler.foreground": "#ff4081"
+	},
+	"files.associations": {
+
+	}
+}
