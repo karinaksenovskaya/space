@@ -1,4 +1,4 @@
-MAXCOUNT=1000
+MAXCOUNT=20000
 count=1
 
 while [ "$count" -le $MAXCOUNT ]      # Генерация 10 ($MAXCOUNT) случайных чисел.

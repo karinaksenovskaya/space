@@ -63,7 +63,7 @@ int main(int argc, char* argv[]){
                 return EXIT_FAILURE; // Мне кажется, что тут все плохо
             }
             if (result == EBUSY) {
-                if(usleep(600) == -1){
+                if(usleep(250000) == -1){
                     perror("USLEPP: ");
                     return EXIT_FAILURE;
                 }
@@ -72,6 +72,7 @@ int main(int argc, char* argv[]){
                     count++;
                     goto label;
                 }
+                return -1;
             }
             if (result == 0) {
                 return EXIT_SUCCESS; // А тут все хорошо 

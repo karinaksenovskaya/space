@@ -56,5 +56,11 @@ int main(int argc, char* argv[]){
         return EXIT_FAILURE;
     }
 
+    result = pthread_join(thread, NULL);
+    if(result != 0){
+        perror("Joing the second thread");
+        return EXIT_FAILURE;
+    }
+
     return 0;
 }
